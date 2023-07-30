@@ -31,6 +31,19 @@ set sidescrolloff=5 " minimum number of columns to keep the the side of the curs
 
 "--- File Type Settings --
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
+augroup html
+    autocmd!
+    autocmd Filetype html abbreviate <buffer> <p <p></p>
+    autocmd Filetype html abbreviate <buffer> <a <a href='' target='blank' rel='noopener noreferrer'></a>
+    autocmd Filetype html abbreviate <buffer> <a <a href='' target='blank' rel='noopener noreferrer'></a> 
+    autocmd Filetype html abbreviate <buffer> <f <figure><cr><img src='' alt=''><cr><figcaption></figcaption><cr></figure>
+    autocmd Filetype html abbreviate <buffer> <u <ul><cr></ul>
+    autocmd Filetype html abbreviate <buffer> <l <li></li>
+    autocmd Filetype html abbreviate <buffer> codepy <pre><cr><code class='language-python'>
+    autocmd Filetype html abbreviate <buffer> endcode </code><cr></pre>
+    autocmd Filetype html abbreviate <buffer> codeb <pre><cr><code class='language-bash'>
+    autocmd Filetype html abbreviate <buffer> coden <pre><cr><code class='language-none'>
+augroup END
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
 
