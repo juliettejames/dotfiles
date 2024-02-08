@@ -129,5 +129,6 @@ unset __conda_setup
 alias h="cd ~"
 alias qsa="cd ~/projects/quantstart_articles/approot/"
 alias qs="cd ~/projects/quantstart/approot"
+alias qst="cd ~/projects/qstrader/approot"
 alias c="clear"
 alias jn="jupyter notebook"
