@@ -54,6 +54,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
+Plugin 'cespare/vim-toml'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
