@@ -134,3 +134,7 @@ alias c="clear"
 alias jn="jupyter notebook"
 alias dcd="docker compose down"
 alias dcu="docker compose up --build"
+alias gstz="git_status_size"
+git_status_size(){
+    git status --porcelain | awk '{print $2}' | xargs ls -hl | sort -r -h | awk '{print $5 "\t" $9}'
+}
