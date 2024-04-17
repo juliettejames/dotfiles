@@ -62,3 +62,5 @@ filetype plugin indent on    " required
 " Plugin specific keybindings
 map <C-n> :NERDTreeToggle<CR>
 
+" Keybindings
+nnoremap <C-i> i_<Esc>r
